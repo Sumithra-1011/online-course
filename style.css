@@ -1,0 +1,477 @@
+:root{
+    --primary: #FF6600;
+    --gray-dark: #343a40;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--gray-dark) ;
+}
+/* navbar */
+/* navbar heading */
+.first-letter{
+    color:var(--primary);
+}
+.navbar-brand{
+    font-size:2rem !important;
+    font-weight:800;
+    color: var(--gray-dark) !important;   
+}
+.navbar-brand::first-letter{
+    font-size:2.2rem;
+}
+.nav-item{
+    margin-right:20px !important;
+}
+.navbar .btn{
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+.navbar .btn:active,
+.navbar .btn:hover{
+    background-color: var(--primary);
+    color:white !important;
+    border: 3px solid;
+    border-color: var(--primary) !important;
+}
+.nav-link:hover{
+    color: var(--primary) !important;
+}
+
+/* carousel-item */
+.carousel-item{
+    min-height: 300px;
+}
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    z-index: 1;
+}
+/* carousel-item */
+@media(max-width:588px){
+    .carousel-item{
+        position: relative;
+        min-height: 450px;
+    }
+    .carousel-item img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.30);
+    }
+    .carousel-caption{
+        top:40px;
+    }
+}
+.carousel-item img{
+    filter: brightness(0.30);
+}
+.carousel-head{
+    padding: 0 !important;
+    
+}
+.carousel-item{
+    position: relative;
+}
+.carousel-indicators button{
+    width: 20px !important;
+    height: 20px !important;  
+    border: 2px solid white !important;
+    background-color: transparent !important;
+    border-radius: 50% !important;
+}
+.carousel-indicators .active{
+    background-color: var(--primary) !important;
+}
+.carousel-indicators{
+    left:15% !important;
+}
+/* about us */
+.aboutus img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.about{
+    color: var(--primary);
+    letter-spacing: 1px;
+    text-decoration:underline dashed;
+    text-underline-offset:10px;
+}
+.about h1 p{
+    color: var(--gray-dark);
+}
+.feature{
+    /* height: 300px !important; */
+    /* width: 100%; */
+    height:540px !important;
+    object-fit: cover;
+    margin-top: 10px;
+
+}
+@media(max-width:991px){
+    .feature{
+        width: 500px;
+        height: 480px !important;
+        object-fit: cover;
+    }
+}
+/* subject */
+.subject{
+    height: 200px; 
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-blend-mode: darken;
+    background-repeat: no-repeat; 
+}
+.subject-1{
+    background:rgba(0, 0, 0,0.6) url(/images/cat-1.jpg);
+}
+.subject-2{
+    background: rgba(0, 0, 0,0.6) url(/images/cat-2.jpg);
+}
+.subject-3{
+    background: rgba(0, 0, 0,0.6) url(/images/cat-3.jpg);
+}
+.subject-4{
+    background: rgba(0, 0, 0,0.6) url(/images/cat-4.jpg);
+}
+.subject-5{
+    background: rgba(0, 0, 0,0.6) url(/images/cat-5.jpg);
+}
+.subject-6{
+    background: rgba(0, 0, 0,0.6) url(/images/cat-6.jpg);
+}
+.subject-7{
+    background: rgba(0, 0, 0,0.6) url(/images/cat-7.jpg);
+}
+.subject-8{
+    background: rgba(0, 0, 0,0.6) url(/images/cat-8.jpg);
+}
+@media(max-width:991px){
+    .subject{
+        height: 300px;
+    }
+}
+.btn-course{
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+.btn-course:hover{
+    background-color: white !important;
+    color: #343a40 !important;
+    border:2px solid var(--primary) !important ;  
+}
+.star i{
+    color: #FF6600;
+}
+.star p{
+    color: var(--primary);
+    display: inline;
+}
+.author img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:3px solid white !important;
+}
+.card-body{
+    position: relative;
+}
+.author-header{
+    position:absolute;
+    top:-15px;
+    /* border:2px solid red; */
+    width: 100%;
+    padding-right: 25px;
+}
+.author img:hover{
+    border-color:var(--primary) !important;
+    transform: rotate(360deg);
+    transition-duration:1s;
+}
+.price{
+    background-color: var(--primary);
+    color: white;
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+}
+.tooltip{
+    border-radius:30px !important;
+    margin-left: 10px !important;
+}
+.tooltip-inner{
+    background-color: #FF6600 !important;
+    color: white !important;
+    padding: 5px !important;
+}
+.tooltip .tooltip-arrow::before {
+    position: absolute !important;
+    content: "" !important;
+    border-bottom-color: #dc3545 !important;
+    border-style: solid !important;
+}
+.card-btn{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.6s;
+}
+.card-btn:hover{
+    opacity: 1;
+}
+.card-btn>*{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+.card-btn:hover>*{
+    transform: translateY(0px);
+} 
+.card-btn button{
+   position: relative;
+   background-color:var(--primary);
+   color:white;
+   padding: 10px 20px;
+   border-radius: 30px;
+   border: 2px solid var(--primary);
+   transition: 1s all ease-in-out;
+}
+.card-btn button:hover{
+    color:var(--gray-dark);
+    background-color:white;
+}
+/* New Students start */
+.new-students{
+    background:rgba(0, 0, 0,0.6) url(/images/course-3.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.need-courses{
+    color: var(--primary);
+    letter-spacing: 1px;
+}
+.new-students i{
+    color: var(--primary);
+    margin-right:15px;
+    font-weight:bold;
+}
+.carousell .owl-item .cardd,
+.carousell .owl-item .cardd * {
+    transition: .5s;
+}
+.carousell .owl-nav {
+    margin-top:5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+.quote{
+    color: var(--primary);
+    top:-5px;
+}
+.carousell .owl-nav .owl-prev,
+.carousell .owl-nav .owl-next {
+    margin: 0 5px;
+  
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#111111 !important;
+    border: 2px solid; 
+    border-radius:5px;
+    font-size: 18px;
+    transition: .5s;
+}
+.carousell .owl-nav .owl-prev{
+    background-color:var(--primary) !important;
+}
+.carousell .owl-nav .owl-next{
+    background-color: var(--gray-dark) !important;
+}
+.owl-nav i{
+    color: white !important;
+}
+.carousell img{
+    background-color: #FF6600;
+    width:100px !important;
+    height:100px !important;
+}
+.events{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    padding:20px 20px 10px 60px;
+    position: relative;
+}
+.event-time{
+    width:70px;
+    height:70px;
+    background-color:var(--primary);
+    text-align: center;
+    position: absolute;
+    top:55px;
+    left:-30px;
+}
+.events a:hover{
+    color:var(--primary) !important;
+}
+.events:hover a{
+    color:var(--primary) !important;
+}
+.events:hover .event-time{
+    border-radius: 50%;
+}
+.Upcoming{
+    margin-left:35px;
+}
+/* Focus-on-Brands */
+.Focus-on-Brands{
+    background:rgba(0, 0, 0,0.6) url(/images/success.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.brand-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.brand-head h4{
+    align-self:flex-start;
+}
+.brand-head .btn-group{
+    align-self:flex-start;
+}
+.Focus-on-Brands h5{
+    letter-spacing:1.5px;
+}
+.Focus-on-Brands button{
+    padding:15px;
+    border: none;
+    margin-top:40px;
+    font-weight: bolder;
+    letter-spacing:1.5px;
+    font-size:13px;
+}
+.Focus-on-Brands .btn-1:hover{
+    background-color: var(--primary) !important;
+    color: white;
+}
+.Focus-on-Brands .btn-2{
+    background-color: var(--primary) !important;
+    color: white;
+}
+.Focus-on-Brands .btn-2:hover{
+    background-color: white !important;
+    color: #343a40;
+}
+.accordion-button:not(.collapse){
+    background-color:var(--primary);
+}
+.accordion-button{
+    background-color:#fc9755 !important;
+    color:#fff !important;
+    font-weight:bold;
+}
+
+.accordion-button:active{
+    background-color: var(--primary) !important;
+    color: #fff;
+}
+.accordion-button::after{
+    background-image: none !important;
+}
+
+.accordion-button:focus{
+    border:none !important;
+    outline:none !important;
+    box-shadow: none !important;
+    background-color: var(--primary) !important;
+    color: #fff !important;
+}                    
+textarea,
+input:focus{
+    box-shadow:none !important;
+    outline:none !important;
+    border-color:none !important ;
+}
+textarea,
+input:active{
+    box-shadow:none !important;
+    outline:none !important;
+    border-color:none !important ;
+}
+/* scroll button */
+.scroll-btn{
+    border-radius:5px;
+    padding:10px;
+    background-color:var(--primary);
+    color:white !important;
+    border-color:aliceblue;
+    position: fixed;
+    bottom:16px;
+    right: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+/* scroll button  add js*/
+.activee{
+    bottom:32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+/* about-page-about-headc */
+.about-page-about-head{
+    background:rgba(0, 0, 0,0.6) url(/images/course-3.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height:50vh;
+    width:100% ;   
+}
+.bg-orange{
+    background-color: #fc9755;
+}
+/* all-event */
+.all-event:hover .event-month{
+    border-radius:50%;
+    cursor:pointer; 
+}
+.all-event:hover .event-title a{
+    color:var(--primary) !important; 
+}
+.all-event:hover .event-img{
+    transform: scale(1.1);
+}
